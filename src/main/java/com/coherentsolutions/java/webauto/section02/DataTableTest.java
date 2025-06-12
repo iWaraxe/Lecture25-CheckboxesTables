@@ -47,6 +47,7 @@ public class DataTableTest {
                 .collect(Collectors.toList());
         System.out.println(lastNames);
         Collections.sort(lastNames);
+        System.out.println(lastNames);
         driver.findElement(LAST_NAME_HEADER).click();
         List<String> sortedLastNames = driver.findElements(LAST_NAMES).stream()
                 .map(WebElement::getText)
